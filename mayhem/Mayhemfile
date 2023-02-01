@@ -1,0 +1,9 @@
+project: pyvips
+target: image-fuzz
+testsuite:
+    - file://mayhem/testsuite
+
+cmds:
+  - cmd: /src/mayhem/fuzz_parse.py
+    libfuzzer: true
+    timeout: 12
